@@ -10,9 +10,8 @@ class Solution:
 
         for i in range(len(nums)):
             for reverse_pair in self._twoSum(nums, i+1, nums[i] * -1):
-                if reverse_pair:
-                    cur_res = (*reverse_pair, nums[i])
-                    res.add(cur_res)
+                cur_res = (*reverse_pair, nums[i])
+                res.add(cur_res)
         
         return list(res)
     
@@ -30,4 +29,3 @@ class Solution:
                 right -= 1
             else:
                 left += 1
-        return ()
