@@ -16,7 +16,6 @@ class Solution:
             for reverse_pair in self._twoSum(nums, i+1, nums[i] * -1):
                 triplet = [*reverse_pair, nums[i]]
                 res.append(triplet)
-            prev = nums[i]
         
         return res
     
