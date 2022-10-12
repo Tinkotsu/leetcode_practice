@@ -8,9 +8,8 @@ class Solution:
         res = []
         nums.sort()
 
-        prev = None
         for i in range(len(nums)):
-            if prev is not None and nums[i] == prev:  # skip duplicates
+            if i != 0 and nums[i] == nums[i - 1]:  # skip duplicates
                 continue
             if nums[i] > 0:  # there is no more negative numbers to the right, 0-sum is not possible
                 break
