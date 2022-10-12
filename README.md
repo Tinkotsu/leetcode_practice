@@ -1,2 +1,2 @@
 # leetcode_practice
-Leetcode solutions
+Leetcode problems solutions
