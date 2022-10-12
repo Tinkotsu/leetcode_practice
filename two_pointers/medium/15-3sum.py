@@ -1,6 +1,6 @@
 #  https://leetcode.com/problems/3sum/
 
-from typing import List, Tuple
+from typing import List
 
 
 class Solution:
